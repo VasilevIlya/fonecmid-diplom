@@ -508,6 +508,9 @@
     <mdObject>InformationRegister.ОбработчикиОбновленияОбщихДанных</mdObject>
   </content>
   <content>
+    <mdObject>Document.ВКМ_ОбслуживаниеКлиента</mdObject>
+  </content>
+  <content>
     <mdObject>InformationRegister.РабочиеКаталогиФайлов</mdObject>
   </content>
   <content>

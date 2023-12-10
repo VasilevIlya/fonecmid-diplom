@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af0fd801-d0be-4d0b-aef1-ffe8f03d2f24">
+  <producedTypes>
+    <selectionType typeId="d9e76a79-f346-4537-9443-9c6f62e85834" valueTypeId="f0692fe7-f542-405c-bbe0-b1060a663e2b"/>
+    <listType typeId="3987d157-bf5d-4bca-9e0c-b5d7b5087fa0" valueTypeId="a2ac61b0-e1e5-42b5-9130-dd9df67b4366"/>
+    <managerType typeId="22bb271b-b83f-4932-9f22-26215daa6b85" valueTypeId="7135a4ab-91b8-48cc-8071-b8292666cd3c"/>
+    <recordSetType typeId="117fe1d6-fa30-400b-8b31-f1e7e593d370" valueTypeId="1afa87ce-43b2-41f4-ae8e-e7b764704572"/>
+    <recordKeyType typeId="4c7310f2-daf4-4506-99b3-01bcd3fe457f" valueTypeId="4d5d2280-b894-45db-96f9-29002c000562"/>
+    <recordType typeId="3548b723-00e9-447c-b9dd-2d0c091fa3b9" valueTypeId="de65aa88-e943-4b53-90fd-b3dff63a0068"/>
+    <recalcsType typeId="b97caa18-d62e-47b0-9066-a8cf128bcfd4" valueTypeId="2b673d62-0d9d-47a2-a20a-78eb40cf3a2c"/>
+  </producedTypes>
+  <name>ВКМ_ОсновныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <periodicity>Month</periodicity>
+  <actionPeriod>true</actionPeriod>
+  <basePeriod>true</basePeriod>
+  <schedule>InformationRegister.ВКМ_ГрафикиРаботы</schedule>
+  <scheduleValue>InformationRegister.ВКМ_ГрафикиРаботы.Resource.Значение</scheduleValue>
+  <scheduleDate>InformationRegister.ВКМ_ГрафикиРаботы.Dimension.Дата</scheduleDate>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0f14a2b3-f3d5-4c08-aaae-a5533ca4cf26">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="220956d5-e45a-4211-87a7-ad492cd8e7e1">
+    <name>ДнейОтработано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней отработано</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="5dcc8dce-149f-4792-95dc-932928d6b534">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="819426f3-c62f-4061-9659-bd38acff4734">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="2eba6e13-a248-4537-b27c-b132a70e4649">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:CalculationRegister>
